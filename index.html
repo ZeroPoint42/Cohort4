@@ -1,20 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brock's Shop</title>
-    <link rel="stylesheet" type="text/css" href="css/mywebsite.css">
-    <script type="text/javascript" src="javascript/bootstrap.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="html, music, movies, Tron, Matrix, form, web development">
+	<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2338/2338808.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+    <title>My Personal Site</title>
 </head>
+
 <body>
-    <div class="nav-menu">
-        <a class="active" href="index.html">Home</a>
-        <a href="about-us.html">About Us</a>
-        <a href="contact-us.html">Contact Us</a>
-        <a href="products/single-product.html">Products</a>
-    </div>
-    <p>The best shop in the world!</p>
+	<header>
+
+		<nav class="navbar navbar-dark navbar-expand-lg bg-transparent">
+			<div class="container-fluid">
+				<a class="navbar-brand text-white">Brock</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active text-white link-info" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white link-info" href="about-us.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white link-info" href="contact-us.html">Contact</a>
+						</li>
+                        <li class="nav-item">
+							<a class="nav-link text-white link-info" href="products/product-one.html">Product One</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav><br><br>
+		<div class="titlebar">
+			<div class="square">
+				<img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-zeM1yzIXXJ-tPDGLUNAKjCYkGLk_5sOOBophWbv9Khn_vUasKNx_Z4kKwCQEw9HHsAXHKPDlpgKxjF9c2hs-sOQoHHug=s2560" alt="My logo" width="128">
+			</div>
+			<div>
+				<h3>Personal Portfolio</h3>
+			</div>
+			<div class="square">
+				<img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-zHxLZ84NfsmS0p2dyfNDd9_HMoedS5tSJDKTCaHS7fzT5JYuKE2pqMunfa8Ub42xWOp3I6m7SzZZAc4_w_lqjZO7NWNg=s2560" alt="My logo" width="128">
+			</div>
+		</div>
+	</header><br>
+
+	<main>
+		<div class="container">
+			<p style="text-align: center">A little about me</p>
+			<p style="text-align: center">I build and show custom LED art installations among several other creations in various mediums.
+				3D printing has opened up Pandora's box and allowed me to get things out of my head and into reality.
+				I have a background in working with my hands and I love seeing physical progress of an idea coming ot life.
+				I'm a life long tinkerer and got started with programming after playing with electronics for awhile and
+				then wondering how do people get their electronic projects to listen to their commands?!
+			</p><br>
+			<p style="text-align: center">Software development is a next step for me to change the world and create fun and useful tools.
+				I'm excited to get my creativity onto millions of screens and make life just a little bit easier and fun.
+			</p>
+		</div>
+		<br><br>
+		<div class="container-imgCenter">
+			<div class="container">
+				<h3>Blog post</h3>
+				<p style="text-align: center">Software development isn't new to me. I've been working with Arduino (C++) and Python for a several years now.
+					Web development and CSS is new though. I've learned a ton already with the website projects.
+					Embedding vidoes and audio are the most fun but I also enjoy the styling aspects like tables and forms.
+					Some cohorts have shared some wild and advanced work with their projects which I appreciate so we all can learn together.
+					I love how colaborative this field is and looking foward to continually learning and working with talented devs.
+				</p>
+			</div>
+			<div>
+				<img class="rounded" src="https://lh3.googleusercontent.com/drive-viewer/AITFw-wy5VyQwAouNWEfahTjez7nqrorcf8djMtL6WLjeLMEt5epRJPE5hJER0XnGgn9h0rZO23Em7sj4wJhjv_GXren0lOm=s1600" alt="Tasty doughnut at work" width="300px">
+			</div>
+		</div>
+		<!-- 		<table>
+			<tr>
+				<td>
+					<div class="container">
+						<h3>Blog post</h3>
+						<p style="text-align: center">Software development isn't new to me. I've been working with Arduino (C++) and Python for a several years now.
+							Web development and CSS is new though. I've learned a ton already with the website projects.
+							Embedding vidoes and audio are the most fun but I also enjoy the styling aspects like tables and forms.
+							Some cohorts have shared some wild and advanced work with their projects which I appreciate so we all can learn together.
+							I love how colaborative this field is and looking foward to continually learning and working with talented devs.
+						</p>
+					</div>
+				</td>
+				<td style="float:right">
+					<img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-wy5VyQwAouNWEfahTjez7nqrorcf8djMtL6WLjeLMEt5epRJPE5hJER0XnGgn9h0rZO23Em7sj4wJhjv_GXren0lOm=s1600" alt="Tasty doughnut at work" width="300px">
+				</td>
+			</tr>
+		</table> -->
+		<div class="grid-container">
+			<div class="container">
+				<h3>Hobbies</h3>
+				<ul class="list">
+					<li>Computer Programming</li>
+					<li>Tinkering with electronics</li>
+					<li>3D Design</li>
+					<li>Music Production</li>
+					<li>Improve/Fix Cars</li>
+					<li>Motorcycles</li>
+					<li>Art</li>
+				</ul>
+			</div>
+			<div class="container">
+				<h3>Goals</h3>
+				<ul class="list">
+					<li>Gain Core Skills</li>
+					<li>Grow Network</li>
+					<li>Increase Salary</li>
+					<li>Work at Remote Dream Job</li>
+					<li>Get Intership</li>
+					<li>Invent new Tools</li>
+					<li>Change the World</li>
+				</ul>
+			</div>
+
+		</div>
+
+	</main>
+
+	<footer>
+
+		<div class="contact" id="contact">
+			<h1>Newsletter?</h1>
+			<div class="contact-form">
+				<label for="fName">First Name</label>
+				<div class="contact-input">
+					<input type="text" id="fName" name="contact">
+				</div>
+
+				<label for="lName">Last Name</label>
+				<div class="contact-input">
+					<input type="text" id="lName" name="contact">
+				</div>
+
+				<label for="email">Email</label>
+				<div class="contact-input">
+					<input type="email" id="email" name="email">
+				</div>
+
+				<label for="pNumber">Phone Number</label>
+				<div class="contact-input">
+					<input type="tel" id="pNumber" name="contact">
+				</div>
+			</div>
+			<input type="submit" value="Yes Please!" class="contact-send">
+		</div>
+		<div class="nav">
+			<div class="footer-social">
+				<a href="https://https://www.instagram.com/emanatedesigns/"> Instagram</a>
+				<a href="mailto:info@emanatedesigns.com">Email</a>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
+
 </html>
