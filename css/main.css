@@ -141,7 +141,7 @@ main{
 	box-shadow: 0 15px 25px rgba(129, 124, 124, 0.3);
 }
 .container-imgCenter {
-	display: flex;
+	/* display: flex; */
 	justify-content: space-between;
 	align-items: center;
 }
