@@ -129,9 +129,11 @@ main{
 	align-items: center;
 }
 .container {
-    /* display: flex; */
+    display: flex; 
+	flex-direction: column;
 	padding: 20px;
 	margin: 30px;
+	align-self: center;
     /* align-items: center; */
 	color: white;
 	border-style: hidden;
@@ -155,9 +157,9 @@ a {
 .grid-container {
 	display: grid;
     margin: auto;
-	grid-template-columns: auto auto;
-    gap: 5rem;
-    justify-content: center;
+	grid-template-columns: fit-content(20%) fit-content(20%);
+    gap: 10rem;
+    /* justify-content: center; */
 }
 .footer-social a {
 	color: #fff;
