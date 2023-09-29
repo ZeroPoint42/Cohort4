@@ -1,127 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="html, music, movies, Tron, Matrix, form, web development">
-	<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2338/2338808.png">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-	<link rel="stylesheet" href="/css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="html, music, movies, Tron, Matrix, form, web development"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn-icons-png.flaticon.com/512/2338/2338808.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
     <title>Projects</title>
-</head>
+  </head>
 
-<body>
-	<header>
+  <body>
+    <header>
+      <nav class="navbar navbar-dark navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <div class="square">
+              <img src="/media/LogoSQ.png" alt="My logo" width="32" />
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  id="hm-btn"
+                  class="nav-link active link-info text-white"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  id="ab-btn"
+                  class="nav-link link-info text-white"
+                  href="about-us.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  id="cn-btn"
+                  class="nav-link link-info text-white"
+                  href="contact-us.html"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  id="pr-btn"
+                  class="nav-link link-info text-white"
+                  href="projects.html"
+                  >Projects</a
+                >
+              </li>
+            </ul>
+          </div>
 
-		<nav class="navbar navbar-dark navbar-expand-lg bg-transparent">
-			<div class="container-fluid">
-				<a class="navbar-brand">
-					<div class="square">
-						<img src="/media/LogoSQ.png" alt="My logo" width="32">
-					</div>
-				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a id="hm-btn" class="nav-link active link-info text-white" aria-current="page" href="index.html">Home</a>
-						</li>
-						<li class="nav-item">
-							<a id="ab-btn" class="nav-link link-info text-white" href="about-us.html">About</a>
-						</li>
-						<li class="nav-item">
-							<a id="cn-btn" class="nav-link link-info text-white" href="contact-us.html">Contact</a>
-						</li>
-                        <li class="nav-item">
-							<a id="pr-btn" class="nav-link link-info text-white" href="projects.html">Projects</a>
-						</li>
-					</ul>
-				</div>
-				
-				<label class="toggle-switch">
-					<input type="checkbox" id="mode-toggle">
-					<span class="slider"></span>
-				</label>
-				<img src="/media/night-mode.png" id="dm-icon" class="darkmode-icon" alt="Dark mode icons created by Anggara - Flaticon">
-			</div>
-		</nav><br><br>
-		<!-- <div class="titlebar"> -->
-			<!-- <div class="square">
-				<img src="/media/LogoSQ.png" alt="My logo" width="128">
-			</div> -->
-			<h1>Projects</h1>
-			<!-- <div class="square">
-				<img src="/media/LogoSQ.png" alt="My logo" width="128">
-			</div> -->
-		<!-- </div> -->
-	</header><br>
+          <label class="toggle-switch">
+            <input type="checkbox" id="mode-toggle" />
+            <span class="slider"></span>
+          </label>
+          <img
+            src="/media/night-mode.png"
+            id="dm-icon"
+            class="darkmode-icon"
+            alt="Dark mode icons created by Anggara - Flaticon"
+          />
+        </div>
+      </nav>
+      <br /><br />
+      <h1>Projects</h1>
+    </header>
+    <br />
 
-	<main>
-		<div class="container-p">
-			<div class="card border-0">
-			  <div class="face face1">
-				<div class="content">           
-				  <h3>Task List</h3>
-				  <img class="card-image" src="media\todoList_project.png" alt="Hover Image">
-				</div>
-			  </div>
-			  <div class="face face2">
-				<div class="content">
-					<h4>Task List</h4>
-				  <p> User creates a list with a random image associated. Input must not be blank. A check box is available to mark task complete, which will add strikethrough text decoration. User can also remove task. </p>
-				  <a href="#"><img src="media\github_64px.png" alt="Check it out on Github">  </a>
-				</div>
-			  </div>
-		   </div>
-		   
-		   <div class="card border-0">
-			  <div class="face face1">
-				<div class="content">
-				 <h3>Fade & Slide on scroll</h3>
-				 <img class="card-image" src="media\Fade&Slide.png" alt="Hover Image">
-				</div>
-			  </div>
-			  <div class="face face2">
-				<div class="content">
-					<h4>Fade & Slide on scroll</h4>
-				  <p> Elements slide in when the user scrolls down, a common UI animation using Intersection Observer,then fade away when almost out of viewport. </p>
-				  <a href="#"><img src="media\github_64px.png" alt="Check it out on Github"></a>
-				</div>
-			  </div>
-		   </div>
-		   
-		   
-		   <div class="card border-0">
-			  <div class="face face1">
-				<div class="content">
-				   <h3>LED Crystal</h3>
-				   <img class="card-image" src="media\Crystal.jpg" alt="Hover Image">
-				</div>
-			  </div>
-			  <div class="face face2">
-				<div class="content">
-					<h4>LED Crystal</h4>
-				  <p> A six foot tall crystal with over 1200 addressable LEDs. Animations are controlled with buttons and ToF laser sensors. </p>
-				  <a href="https://github.com/ZeroPoint42/Chronosite/tree/master"><img src="media\github_64px.png" alt="Check it out on Github"></a>
-				</div>
-			  </div>
-		   </div>
-		 </div>
-	</main>
+    <main>
+      <div class="container-p">
+        <div class="card border-0">
+          <div class="face face1">
+            <div class="content">
+              <h3>Task List</h3>
+              <img
+                class="card-image"
+                src="media\todoList_project.png"
+                alt="Hover Image"
+              />
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <h4>Task List</h4>
+              <p>
+                User creates a list with a random image associated. Input must
+                not be blank. A check box is available to mark task complete,
+                which will add strikethrough text decoration. User can also
+                remove task.
+              </p>
+              <a href="https://github.com/ZeroPoint42/TaskList"
+                ><img
+                  src="media\github_64px.png"
+                  alt="Check it out on Github"
+                />
+              </a>
+              <img class="prog-lang" src="media\html.png" alt="HTML used" />
+              <img class="prog-lang" src="media\javascript.png" alt="JS used" />
+            </div>
+          </div>
+        </div>
 
-	<footer>
-		<div class="nav">
-			<div class="footer-social">
-				<a href="https://https://www.instagram.com/emanatedesigns/" class="invertIcon"><img src="/media/instagram_64px.png" alt="Instagram"> </a>
-				<a href="mailto:info@emanatedesigns.com" class="invertIcon"><img src="/media/envelope-plus_64px.png" alt="Email me"></a>
-			</div>
-		</div>
-	</footer>
-	<script src="javascript\script.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-</body>
+        <div class="card border-0">
+          <div class="face face1">
+            <div class="content">
+              <h3>Fade & Slide on scroll</h3>
+              <img
+                class="card-image"
+                src="media\Fade&Slide.png"
+                alt="Hover Image"
+              />
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <h4>Fade & Slide on scroll</h4>
+              <p>
+                Elements slide in when the user scrolls down, a common UI
+                animation using Intersection Observer,then fade away when almost
+                out of viewport.
+              </p>
+              <a href="https://github.com/ZeroPoint42/Fade-SlideonScroll"
+                ><img src="media\github_64px.png" alt="Check it out on Github"
+              /></a>
+              <img class="prog-lang" src="media\html.png" alt="HTML used" />
+              <img class="prog-lang" src="media\css.png" alt="CSS used" />
+              <img class="prog-lang" src="media\javascript.png" alt="JS used" />
+            </div>
+          </div>
+        </div>
 
+        <div class="card border-0">
+          <div class="face face1">
+            <div class="content">
+              <h3>LED Crystal</h3>
+              <img
+                class="card-image"
+                src="media\Crystal.jpg"
+                alt="Hover Image"
+              />
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <h4>LED Crystal</h4>
+              <p>
+                A six foot tall crystal with over 1200 addressable LEDs.
+                Animations are controlled with buttons and ToF laser sensors.
+              </p>
+              <a href="https://github.com/ZeroPoint42/Chronosite/tree/master"
+                ><img src="media\github_64px.png" alt="Check it out on Github"
+              /></a>
+              <img class="prog-lang" src="media\c.png" alt="C++ used" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="nav">
+        <div class="footer-social">
+          <a
+            href="https://https://www.instagram.com/emanatedesigns/"
+            class="invertIcon"
+            ><img src="/media/instagram_64px.png" alt="Instagram" />
+          </a>
+          <a href="mailto:info@emanatedesigns.com" class="invertIcon"
+            ><img src="/media/envelope-plus_64px.png" alt="Email me"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="javascript\script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
