@@ -16,53 +16,50 @@
 
 		<nav class="navbar navbar-dark navbar-expand-lg bg-transparent">
 			<div class="container-fluid">
-				<a class="navbar-brand text-white">Brock</a>
+				<a class="navbar-brand">
+					<div class="square">
+						<img src="/media/LogoSQ.png" alt="My logo" width="32">
+					</div>
+				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link active text-white link-info" aria-current="page" href="index.html">Home</a>
+							<a id="hm-btn" class="nav-link active link-info text-white" aria-current="page" href="index.html">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-white link-info" href="about-us.html">About</a>
+							<a id="ab-btn" class="nav-link link-info text-white" href="about-us.html">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-white link-info" href="contact-us.html">Contact</a>
+							<a id="cn-btn" class="nav-link link-info text-white" href="contact-us.html">Contact</a>
 						</li>
                         <li class="nav-item">
-							<a class="nav-link text-white link-info" href="products/product-one.html">Product One</a>
+							<a id="pr-btn" class="nav-link link-info text-white" href="projects.html">Projects</a>
 						</li>
 					</ul>
 				</div>
+				<img src="/media/night-mode.png" id="darkmode-icon" class="darkmode-icon" alt="Dark mode icons created by Anggara - Flaticon">
+				<label class="toggle-switch">
+					<input type="checkbox" id="mode-toggle">
+					<span class="slider"></span>
+				</label>
 			</div>
 		</nav><br><br>
 		<div class="titlebar">
-			<div class="square">
-				<!-- <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-zeM1yzIXXJ-tPDGLUNAKjCYkGLk_5sOOBophWbv9Khn_vUasKNx_Z4kKwCQEw9HHsAXHKPDlpgKxjF9c2hs-sOQoHHug=s2560" alt="My logo" width="128"> -->
-				<img src="media/logo.jpg" alt="My logo" width="128">
-			</div>
-			<div>
-				<h2>Contact Us</h2>
-			</div>
-			<div class="square">
-				<!-- <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-zHxLZ84NfsmS0p2dyfNDd9_HMoedS5tSJDKTCaHS7fzT5JYuKE2pqMunfa8Ub42xWOp3I6m7SzZZAc4_w_lqjZO7NWNg=s2560" alt="My logo" width="128"> -->
-				<img src="media/logo.jpg" alt="My logo" width="128">
-			</div>
+			<!-- <div class="square">
+				<img src="media/LogoSQ.png" alt="My logo" width="128">
+			</div> -->
+			<h1 style="color: rgb(45, 177, 248);">Contact Me</h1>
+			<!-- <div class="square">
+				<img src="media/LogoSQ.png" alt="My logo" width="128">
+			</div> -->
 		</div>
 	</header><br>
 
     <main>
-		<div class="container">
-            <p style="color: red;"><strong>Contact us, we're here!</strong></p>
-        </div>
-	</main>
-
-	<footer>
-
 		<div class="contact" id="contact">
-			<h1>Newsletter?</h1>
 			<div class="contact-form">
 				<label for="fName">First Name</label>
 				<div class="contact-input">
@@ -85,14 +82,18 @@
 				</div>
 			</div>
 			<input type="submit" value="Yes Please!" class="contact-send">
-		</div>
-		<div class="nav">
-			<div class="footer-social">
-				<a href="https://https://www.instagram.com/emanatedesigns/"> Instagram</a>
-				<a href="mailto:info@emanatedesigns.com">Email</a>
+		</div>  
+	</main>
+		
+		<footer>
+			<div class="nav">
+				<div class="footer-social">
+					<a href="https://https://www.instagram.com/emanatedesigns/" class="invertIcon"><img src="/media/instagram_64px.png" alt="Instagram"> </a>
+					<a href="mailto:info@emanatedesigns.com" class="invertIcon"><img src="/media/envelope-plus_64px.png" alt="Email me"></a>
+				</div>
 			</div>
-		</div>
-	</footer>
+		</footer>
+	<script src="javascript\script.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 
