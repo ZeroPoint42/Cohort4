@@ -28,7 +28,7 @@
         <div class="container-fluid">
           <a class="navbar-brand">
             <div class="square">
-              <img src="/media/LogoSQ.png" alt="My logo" width="32" />
+              <img src="media/LogoSQ.png" alt="My logo" width="32" />
             </div>
           </a>
           <button
@@ -80,7 +80,7 @@
             </ul>
           </div>
           <img
-            src="/media/night-mode.png"
+            src="media/night-mode.png"
             id="darkmode-icon"
             class="darkmode-icon"
             alt="Dark mode icons created by Anggara - Flaticon"
@@ -97,29 +97,38 @@
     <br />
 
     <main>
-      <div class="contact" id="contact">
-        <div class="contact-form">
-          <label for="fName">First Name</label>
+      <div class="contact" >
+        <form class="contact-form" id="contact" novalidate>
+          
           <div class="contact-input">
-            <input type="text" id="fName" name="contact" />
+            <label for="fName" class="form-label">First Name</label>
+            <input type="text" id="fName" name="contact" class="form-control" required>
+            <small class="error-msg invalid-feedback">Required</small>
           </div>
-
-          <label for="lName">Last Name</label>
+          
           <div class="contact-input">
-            <input type="text" id="lName" name="contact" />
+            <label for="lName" class="form-label">Last Name</label>
+            <input type="text" id="lName" name="contact" class="form-control" required>
+            <small class="error-msg invalid-feedback">Required</small>
           </div>
-
-          <label for="email">Email</label>
+        
           <div class="contact-input">
-            <input type="email" id="email" name="email" />
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+            <small class="error-msg invalid-feedback">Required</small>
           </div>
-
-          <label for="pNumber">Phone Number</label>
+          
           <div class="contact-input">
-            <input type="tel" id="pNumber" name="contact" />
+            <label for="pNumber" class="form-label">Phone Number</label>
+            <input type="tel" id="pNumber" name="contact" class="form-control" onInput="this.value = phoneFormat(this.value)" required>
+            <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> -->
+            
+            <small class="error-msg invalid-feedback">Required</small>
           </div>
-        </div>
-        <input type="submit" value="Yes Please!" class="contact-send" />
+        
+          <button type="submit" class="btn contact-send" disabled>Yes Please!</button>
+          <div id="form-submitted-msg">Form successfully submitted!</div>
+        </form>
       </div>
     </main>
 
@@ -129,10 +138,10 @@
           <a
             href="https://https://www.instagram.com/emanatedesigns/"
             class="invertIcon"
-            ><img src="/media/instagram_64px.png" alt="Instagram" />
+            ><img class="social-icons" src="media/instagram_64px.png" alt="Instagram" />
           </a>
           <a href="mailto:info@emanatedesigns.com" class="invertIcon"
-            ><img src="/media/envelope-plus_64px.png" alt="Email me"
+            ><img class="social-icons" src="media/envelope-plus_64px.png" alt="Email me"
           /></a>
         </div>
       </div>

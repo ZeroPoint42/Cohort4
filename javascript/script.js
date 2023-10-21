@@ -51,7 +51,7 @@ const items = document.querySelectorAll('.card:not(:first-child)');
 
 const options = {
   threshold: 0.5
-}
+};
 
 function addSlideIn(entries) {
   entries.forEach(entry => {
@@ -61,10 +61,101 @@ function addSlideIn(entries) {
       entry.target.classList.remove('slide-in');
     }
   });
-}
+};
 
 const observer = new IntersectionObserver(addSlideIn, options);
 
 items.forEach(item => {
   observer.observe(item);
 });
+
+// ------ validation --------------
+// get DOM
+const form = document.getElementById('contact');
+const submitButton = document.querySelector('.contact-send');
+const successMessage = document.getElementById('form-submitted-msg');
+const telNum = document.getElementById('pNumber');
+
+// store elements in array
+const formElements = [ ...form.elements ];
+
+// check if all form elements are valid
+const allInputsValid = () => {
+  const valid = formElements.every((element) => {
+    if (element.nodeName === 'SELECT') {
+      return element.value !== 'Please select an option'
+    } else {
+      return element.checkValidity()
+    }
+  });
+  return valid
+};
+
+// handle changes to any form element
+const handleChange = () => {
+  // iterate each element
+  formElements.forEach((element) => {
+    // If the element is invalid and is not a button, style it with a red border and red text
+    if (!element.checkValidity()
+          && element.nodeName !== 'BUTTON'
+    ) {
+      element.style.borderColor = 'red';
+      element.nextElementSibling.style.color = 'red';
+      element.nextElementSibling.style.display = 'block';
+      element.previousElementSibling.style.color = 'red';
+    }
+
+    // If the element is valid, reset its style to the original colors
+    // The conditions are the same as above for excluding certain elements
+    if (element.checkValidity()
+          && element.nodeName !== 'BUTTON'
+    ) {
+      element.style.borderColor = 'white';
+      // element.nextElementSibling.style.color = 'red';
+      element.nextElementSibling.style.display = 'none';
+      element.previousElementSibling.style.color = '';
+    }
+  });
+
+  // If all form elements are valid, enable the submit button; otherwise, disable it
+  if (allInputsValid()) {
+    submitButton.removeAttribute('disabled', '');
+  } else {
+    submitButton.setAttribute('disabled', '');
+  }
+};
+// handle form submission
+const handleSubmit = (e) => {
+  // Prevent the default form submission behavior
+  e.preventDefault();
+
+  // If all form elements are valid after the form submission, display a success message, reset the form, and disable the submit button
+  if (allInputsValid()) {
+    successMessage.style.display = 'block';
+    form.reset();
+    submitButton.setAttribute('disabled', '');
+
+    // Hide the success message after 2 seconds
+    setTimeout(() => {
+      successMessage.style.display = 'none';
+    }, 2000)
+  };
+};
+
+function phoneFormat(input) {//returns (###) ###-####
+    input = input.replace(/\D/g,'');
+    var size = input.length;
+    if (size>0) {input="("+input}
+    if (size>3) {input=input.slice(0,4)+") "+input.slice(4,11)}
+    if (size>6) {input=input.slice(0,9)+"-" +input.slice(9)}
+    return input;
+}
+
+
+// Add event listener to each form element
+formElements.forEach((element) => {
+  element.addEventListener('change', handleChange);
+});
+
+// Add submit listener to the form
+form.addEventListener('submit', (e) => handleSubmit(e));

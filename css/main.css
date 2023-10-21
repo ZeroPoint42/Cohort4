@@ -117,15 +117,14 @@ main {
   width: 100%;
 }
 
-.contact-form label {
+.contact-input label {
   font-size: 16px;
   margin-bottom: 5px;
 }
 
 .contact-input {
   display: flex;
-  border: 2px solid rgb(78, 83, 86);
-  border-radius: 0.375rem;
+  flex-direction: column;
   margin-bottom: 15px;
 }
 
@@ -136,17 +135,19 @@ main {
 .contact-input input {
   width: 100%;
   outline: none;
-  border: none;
+  border: 1px solid;
+  border-color: #2196f3;
   padding: 0.5rem;
   font-size: 0.875rem;
   margin: 5px 0px;
-  /* color: rgb(237, 237, 238); */
+  color: rgb(237, 237, 238);
   background-color: transparent;
   font-weight: 500;
 }
 
 .contact-send {
   padding: 0.5rem 0.75rem;
+  margin-top: 30px;
   outline: none;
   border-radius: 0.5rem;
   background-color: rgb(40, 207, 245);
@@ -156,10 +157,29 @@ main {
   cursor: pointer;
 }
 
-.contact-send:hover {
+/* .contact-send:hover {
   font-weight: 800;
   background-color: rgb(32, 83, 194);
   color: #fff;
+} */
+
+.btn:hover {
+  border-color: rgb(40, 207, 245);
+}
+
+#form-submitted-msg {
+  margin-top: 3rem;
+  border-radius: 3px;
+  background-color: rgb(67, 161, 67);
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  display: none;
+}
+
+.error-msg {
+  display: none;
 }
 
 .copyright {
@@ -223,7 +243,7 @@ a {
 }
 
 .social-icons:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 .social-icons {
